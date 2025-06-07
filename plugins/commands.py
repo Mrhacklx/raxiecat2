@@ -398,7 +398,7 @@ async def start(client, message):
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
         add = f"https://earnmini0.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton("• Server 1 (Easy) •", web_app=WebAppInfo(url=add)),
+            InlineKeyboardButton("• Server 1 (Easy) •", url=add),
             InlineKeyboardButton('• Server 2 •', url=g)
         ]]
         if settings['tutorial']:
@@ -420,7 +420,7 @@ async def start(client, message):
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
         add = f"https://earnmini0.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton("• Server 1 (Easy) •", web_app=WebAppInfo(url=add)),
+            InlineKeyboardButton("• Server 1 (Easy) •", url=add),
             InlineKeyboardButton('• Server 2 •', url=g)
         ]]
         if settings['tutorial']:
@@ -499,7 +499,7 @@ async def start(client, message):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
             add = f"https://earnmini0.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
             btn = [[
-            InlineKeyboardButton("• Server 1 (Easy) •", web_app=WebAppInfo(url=add)),
+            InlineKeyboardButton("• Server 1 (Easy) •", url=add),
             InlineKeyboardButton('• Server 2 •', url=g)
               ]]
             if settings['tutorial']:
