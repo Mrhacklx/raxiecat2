@@ -396,10 +396,10 @@ async def start(client, message):
         settings = await get_settings(chat_id)
         pre = 'allfilesp' if settings['file_secure'] else 'allfiles'
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
-        add = "https://otieu.com/4/9417344"
+        add = f"https://earnmini0.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton('Link 1', url=add),
-            InlineKeyboardButton('Link 2', url=g)
+            InlineKeyboardButton("• Server 1 (Easy) •", web_app=WebAppInfo(url=add)),
+            InlineKeyboardButton('• Server 2 •', url=g)
         ]]
         if settings['tutorial']:
             btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
@@ -418,10 +418,10 @@ async def start(client, message):
         settings = await get_settings(chat_id)
         pre = 'filep' if settings['file_secure'] else 'file'
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
-        add = "https://otieu.com/4/9417344"
+        add = f"https://earnmini0.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton('Link 1', url=add),
-            InlineKeyboardButton('Link 2', url=g)
+            InlineKeyboardButton("• Server 1 (Easy) •", web_app=WebAppInfo(url=add)),
+            InlineKeyboardButton('• Server 2 •', url=g)
         ]]
         if settings['tutorial']:
             btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
@@ -497,11 +497,11 @@ async def start(client, message):
         pre = 'filep' if settings['file_secure'] else 'file'
         if settings['is_shortlink'] and not await db.has_premium_access(user):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
-            add = "https://otieu.com/4/9417344"
+            add = f"https://earnmini0.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
             btn = [[
-            InlineKeyboardButton('Link 1', url=add),
-            InlineKeyboardButton('Link 2', url=g)
-                   ]]
+            InlineKeyboardButton("• Server 1 (Easy) •", web_app=WebAppInfo(url=add)),
+            InlineKeyboardButton('• Server 2 •', url=g)
+              ]]
             if settings['tutorial']:
                 btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
             text = "<b>✅ ʏᴏᴜʀ ғɪʟᴇ ʀᴇᴀᴅʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴏᴘᴇɴ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ғɪʟᴇ\n\n</b>"
