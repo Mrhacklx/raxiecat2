@@ -389,7 +389,24 @@ async def start(client, message):
             await verify_user(client, userid, token)
         else:
             return await message.reply_text(text="<b>ɪɴᴠᴀʟɪᴅ ʟɪɴᴋ ᴏʀ ᴇxᴘɪʀᴇᴅ ʟɪɴᴋ</b>", protect_content=True)
-            
+
+    elif data.split("-", 1)[0] == "refer":
+        userid = data.split("-", 2)[1]
+        text = """<b>ʜᴇʏ {} 👋,
+Now you can get Premium Membership for FREE!
+
+🔥 Join now, collect coins, and enjoy premium access at no extra cost!
+
+👉 Start now and upgrade to premium for free!</b>"""
+        url = f"https://raxiecat.blogspot.com?${userid}"
+        button = [
+            [InlineKeyboardButton("• Start Now •", web_app=WebAppInfo(url=url))]
+        ]
+        await client.send_message(chat_id=message.from_user.id, text=text, reply_markup=InlineKeyboardMarkup(button))
+        
+
+
+        
     if data.startswith("sendfiles"):
         chat_id = int("-" + file_id.split("-")[1])
         userid = message.from_user.id if message.from_user else None
