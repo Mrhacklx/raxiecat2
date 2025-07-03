@@ -392,7 +392,7 @@ async def start(client, message):
 
     elif data.split("-", 1)[0] == "refer":
         userid = data.split("-", 2)[1]
-        text = """<b>ʜᴇʏ {message.from_user.mention} 👋,
+        text = f"""<b>ʜᴇʏ {message.from_user.mention} 👋,
 Now you can get Premium Membership for FREE!
 
 🔥 Join now, collect coins, and enjoy premium access at no extra cost!
