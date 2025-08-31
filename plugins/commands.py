@@ -514,11 +514,11 @@ Now you can get Premium Membership for FREE!
         pre = 'filep' if settings['file_secure'] else 'file'
         if settings['is_shortlink'] and not await db.has_premium_access(user):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
-        add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
-        btn = [[
-            InlineKeyboardButton("• Server 1 (Easy) •", url=add),
-            InlineKeyboardButton('• Server 2 •', url=g)
-          ]]
+            add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
+            btn = [[
+                InlineKeyboardButton("• Server 1 (Easy) •", url=add),
+                InlineKeyboardButton('• Server 2 •', url=g)
+              ]]
             if settings['tutorial']:
                 btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
             text = "<b>✅ ʏᴏᴜʀ ғɪʟᴇ ʀᴇᴀᴅʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴏᴘᴇɴ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ ғɪʟᴇ\n\n</b>"
@@ -1434,4 +1434,5 @@ async def purge_requests(client, message):
             parse_mode=enums.ParseMode.MARKDOWN,
             disable_web_page_preview=True
         )
+
 
