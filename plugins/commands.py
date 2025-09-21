@@ -415,8 +415,7 @@ Now you can get Premium Membership for FREE!
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
         add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton("• Server 1 (Easy) •", url=add),
-            InlineKeyboardButton('• Server 2 •', url=g)
+            InlineKeyboardButton('• Download Link •', url=g)
           ]]
         if settings['tutorial']:
             btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
@@ -437,8 +436,7 @@ Now you can get Premium Membership for FREE!
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
         add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton("• Server 1 (Easy) •", url=add),
-            InlineKeyboardButton('• Server 2 •', url=g)
+            InlineKeyboardButton('• Download Link •', url=g)
           ]]
         if settings['tutorial']:
             btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
@@ -516,8 +514,7 @@ Now you can get Premium Membership for FREE!
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
             add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
             btn = [[
-                InlineKeyboardButton("• Server 1 (Easy) •", url=add),
-                InlineKeyboardButton('• Server 2 •', url=g)
+                InlineKeyboardButton('• Download Link •', url=g)
               ]]
             if settings['tutorial']:
                 btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
@@ -1434,5 +1431,6 @@ async def purge_requests(client, message):
             parse_mode=enums.ParseMode.MARKDOWN,
             disable_web_page_preview=True
         )
+
 
 
