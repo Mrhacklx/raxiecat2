@@ -413,9 +413,9 @@ Now you can get Premium Membership for FREE!
         settings = await get_settings(chat_id)
         pre = 'allfilesp' if settings['file_secure'] else 'allfiles'
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
-        add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
+        add = f"https://raxiecat2.blogspot.com/?https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton('• Download Now •', url=g)
+            InlineKeyboardButton('• Download Now •', url=add)
           ]]
         if settings['tutorial']:
             btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
@@ -434,9 +434,9 @@ Now you can get Premium Membership for FREE!
         settings = await get_settings(chat_id)
         pre = 'filep' if settings['file_secure'] else 'file'
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
-        add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
+        add = f"https://raxiecat2.blogspot.com/?https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}"
         btn = [[
-            InlineKeyboardButton('• Download Now •', url=g)
+            InlineKeyboardButton('• Download Now •', url=add)
           ]]
         if settings['tutorial']:
             btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
@@ -512,9 +512,9 @@ Now you can get Premium Membership for FREE!
         pre = 'filep' if settings['file_secure'] else 'file'
         if settings['is_shortlink'] and not await db.has_premium_access(user):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}")
-            add = f"https://raxiecat1.blogspot.com?{temp.U_NAME}?start={pre}_{file_id}"
+            add = f"https://raxiecat2.blogspot.com/?https://telegram.me/{temp.U_NAME}?start={pre}_{file_id}"
             btn = [[
-                InlineKeyboardButton('• Download Now •', url=g)
+                InlineKeyboardButton('• Download Now •', url=add)
               ]]
             if settings['tutorial']:
                 btn.append([InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=await get_tutorial(chat_id))])
